@@ -14,6 +14,12 @@ pipeline {
       }
     }
 
+    stage('stage_two') {
+      steps {
+        sh 'echo "stage two for build"'
+      }
+    }
+
   }
   environment {
     SC_USER = 'zjk'
